@@ -13,24 +13,34 @@
 
 /*****************************************************************************************/
 
-//Use this instead: $variable_name_here = get_post_meta( get_the_ID(), 'job_title');
-
-$scholarship_job_title = get_post_meta( get_the_ID(), 'job_title');
-$scholarship_employer_name = get_post_meta( get_the_ID(), 'scholarship_employer_name');
-$scholarship_employer_name = get_post_meta( get_the_ID(), 'location-of_job');
+//ALL THIS DATA SHOWN BELOW WOULD BE FOR A SCHOLARSHIPS PAGE FOR WHICH THIS TYPE OF CERTAIN INFO WOULD BE INPUT THROUGH WP DASHBOARD
+//ALL THIS CONTENT WILL LATER BE POPULATED BELOW
 
 
-// In this case it was a page showing scholarships created on the PODS admin dashboard. 
+// THIS WOULD BE ANOTHER SECTION IN HE PODS ADMIN DASHBOARD WHERE DATA WAS INPUT SUCH AS BANNER TITLE AND TEXT FOR A SCHOLARSHIPS PAGE
+$degrees_banner_title = get_post_meta( get_the_ID(), 'banner-title', true);
+$degrees_top_intro_text = get_post_meta( get_the_ID(), 'top-intro-text', true);
+$degrees_center_program_title = get_post_meta( get_the_ID(), 'center-program-title', true);
 
-//$scholarship_location_of_job	 = get_option( 'location-of_job', false );
 
+// THIS WOULD BE ANOTHER SECTION IN HE PODS ADMIN DASHBOARD WHERE DATA WAS INPUT SUCH AS STARTING SALARY FOR A SCHOLARSHIPS PAGE
+$degrees_starting_salary = get_post_meta( get_the_ID(), 'starting-salary', true);
 
+// THIS WOULD BE ANOTHER SECTION IN HE PODS ADMIN DASHBOARD WHERE DATA WAS INPUT SUCH AS JOB TITLE, EMPLOYER NAME, LOCATION FOR A SCHOLARSHIPS PAGE
+$degrees_job_title = get_post_meta( get_the_ID(), 'job-title', true);
+$degrees_employer_name = get_post_meta( get_the_ID(), 'employer-name', true);
+$degrees_location_of_job = get_post_meta( get_the_ID(), 'job-location', true);
 
-// Here you will continue to put all the fields you created on the ponds dashboard and create additional echos which then you will
-// put the echos in the required area below that will already have it's own custom css styles. 
+// THIS IS THE SECTION FOR SCHOLARSHIPS STUDENT CAN APPLY FOR FROM THE TEMPLATE
+$degrees_scholarship_name = get_post_meta( get_the_ID(), 'scholarship-name', true);
+$degrees_scholarship_amount = get_post_meta( get_the_ID(), 'scholarship-amount', true);
+$degrees_scholarship_deadline = get_post_meta( get_the_ID(), 'scholarship-deadline', true);
+
 
 // Remember to use the exact names as above on the ponds dashboard. 
 
+// Below you will continue to put all the fields you created on the ponds dashboard and create additional echos which then you will
+// put the echos in the required area below that will already have it's own custom css styles. 
 ?>
 
 
