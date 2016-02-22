@@ -15,6 +15,7 @@
 
 //ALL THIS DATA SHOWN BELOW WOULD BE FOR A SCHOLARSHIPS PAGE FOR WHICH THIS TYPE OF CERTAIN INFO WOULD BE INPUT THROUGH WP DASHBOARD
 //ALL THIS CONTENT WILL LATER BE POPULATED BELOW
+//EXAMPLE OF THIS PROJECT CAN BE FOUND ON CLIENTS WEBSITE - https://testblog2.creditsesame.com/scholar-sesame/degree/Advertising
 
 
 // THIS WOULD BE ANOTHER SECTION IN HE PODS ADMIN DASHBOARD WHERE DATA WAS INPUT SUCH AS BANNER TITLE AND TEXT FOR A SCHOLARSHIPS PAGE
@@ -31,7 +32,7 @@ $degrees_job_title = get_post_meta( get_the_ID(), 'job-title', true);
 $degrees_employer_name = get_post_meta( get_the_ID(), 'employer-name', true);
 $degrees_location_of_job = get_post_meta( get_the_ID(), 'job-location', true);
 
-// THIS IS THE SECTION FOR SCHOLARSHIPS STUDENT CAN APPLY FOR FROM THE TEMPLATE
+// THIS WOULD BE ANOTHER SECTION IN HE PODS ADMIN DASHBOARD WHERE DATA WAS INPUT SUCH AS SCHOLARSHIP NAME, AMOUNT, DEADLINE
 $degrees_scholarship_name = get_post_meta( get_the_ID(), 'scholarship-name', true);
 $degrees_scholarship_amount = get_post_meta( get_the_ID(), 'scholarship-amount', true);
 $degrees_scholarship_deadline = get_post_meta( get_the_ID(), 'scholarship-deadline', true);
